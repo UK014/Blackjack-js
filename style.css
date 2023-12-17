@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#table {
+    height: 600px;
+    width: 1200px;
+    background-color: #51703e;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#blackjackh1 {
+    color: yellow;
+    font-family: arial;
+}
+#drawcard{
+    height:150px;
+    position:absolute;
+    left:80%;
+    top: 40%;
+}
+#drawcard:hover{
+    cursor: pointer;
+    animation: up 2s ease 0s 1 normal forwards;
+}
+#mycard1{
+    height:150px;
+    position:absolute;
+    left:40%;
+    top: 60%;
+    rotate: -20deg;
+    visibility: hidden;
+}
+#mycard2{
+    height:150px;
+    position:absolute;
+    left:43%;
+    top: 60%;
+    rotate: -10deg;
+    visibility: hidden;
+}
+#mycard3{
+    height:150px;
+    position:absolute;
+    left:46%;
+    top: 60%;
+    rotate: 0deg;
+    visibility: hidden;
+}
+#mycard4{
+    height:150px;
+    position:absolute;
+    left:49%;
+    top: 60%;
+    rotate: 10deg;
+    visibility: hidden;
+}
+#mycard5{
+    height:150px;
+    position:absolute;
+    left:52%;
+    top: 60%;
+    rotate: 20deg;
+    visibility: hidden;
+}
+#croupier1{
+    height:150px;
+    position:absolute;
+    left:45%;
+    top: 20%;
+    visibility: visible;
+    transition: transform 0.5s ease;
+}
+#croupier2{
+    height:150px;
+    position:absolute;
+    left:49%;
+    top: 20%;
+    visibility: visible;
+    transition: transform 0.5s ease;
+}
+#croupier2:hover{
+    cursor: pointer;
+}
+#croupier1.rotated {
+    transform: rotateY(180deg) rotateX(180deg);
+    
+}
+#croupier2.rotated {
+    transform: rotateY(180deg) rotateX(180deg);
+}
+
+@keyframes up {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-50px);
+	}
+}
